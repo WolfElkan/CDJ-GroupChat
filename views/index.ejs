@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Broadcast Example</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div id="reg_window" class="visible">
+			<h3>Welcome to Group Chat!</h3>
+			<span id="reg_instruction">Please enter your name:</span>
+			<form id="register">
+				<input type="text" id="user">
+				<input type="submit" value="Start Chatting!">
+			</form>
+		</div>
+		<div id="chat_window" class="hidden">
+			<h3><u>Conversation Board</u></h3>
+			<div id="conversation">
+				<div class="message">
+					<div class="user_name">Michael:</div>
+					<div class="message_body">This app is so amazing!</div>
+				</div>
+				<div class="action">
+					<div>Michael left the chat.</div>
+				</div>
+				<div class="pending">
+					<div class="user_name">42069:</div>
+					<div class="message_body">This message is from the future. You can't downvote it yet</div>
+				</div>
+				<div class="message">
+					<div class="user_name">Michael:</div>
+					<div class="message_body">This app is so amazing!</div>
+				</div>
+				<div class="action">
+					<div>Michael left the chat.</div>
+				</div>
+				<div class="pending">
+					<div class="user_name">42069:</div>
+					<div class="message_body">This message is from the future. You can't downvote it yet</div>
+				</div>
+			</div>
+			<form id="new_message">
+				<textarea id="compose"></textarea>
+				<button>Send</button>
+			</form>
+		</div>
+	</body>
+</html>

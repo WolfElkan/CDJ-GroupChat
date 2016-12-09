@@ -1,0 +1,57 @@
+.hidden{
+	display: none;
+}
+
+.visible{
+	display: inline-block;
+}
+
+#reg_window{
+	border: solid black 1px;
+	padding: 15px;
+}
+
+	#reg_window h3{
+		margin-top: 0;
+	}
+
+#conversation{
+	width: 80%;
+	height: 400px;
+	margin: 40px 10%;
+	border: solid black 1px;
+	overflow: scroll;
+}
+
+	.user_name,
+	.message_body{
+		padding: 10px;
+		display: inline-block;
+	}
+
+	.user_name{
+		width: 70px;
+	}
+
+	.message_body{
+
+	}
+
+	.action{
+		padding: 0 30px;
+		font-style: italic;
+	}
+
+	.pending{
+		color: gray;
+	}
+
+#new_message{
+	width: 80%;
+	display: block;
+	margin: 0 10%;
+}
+
+	textarea{
+		width: inherit;
+	}
